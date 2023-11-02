@@ -7,15 +7,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* 
-  background-image: linear-gradient(
-      rgba(209, 100, 11, 0.3),
-      rgba(209, 100, 11, 0.3)
-    ),
-    url('../images/phonebook.jpg');
-  /* linear-gradient(90deg, #6e42e7, #001529) */
 }
-*/ code {
+
+code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

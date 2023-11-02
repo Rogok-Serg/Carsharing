@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/carsharing/static/css/main.0b202345.css",
+    "main.js": "/carsharing/static/js/main.23f1cbc2.js",
+    "index.html": "/carsharing/index.html",
+    "main.0b202345.css.map": "/carsharing/static/css/main.0b202345.css.map",
+    "main.23f1cbc2.js.map": "/carsharing/static/js/main.23f1cbc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b202345.css",
+    "static/js/main.23f1cbc2.js"
+  ]
+}

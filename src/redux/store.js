@@ -1,7 +1,7 @@
 // // import { devToolsEnhancer } from '@redux-devtools/extension';
 // // import { combineReducers, createStore } from 'redux';
-// import { configureStore } from '@reduxjs/toolkit';
-// import { contactsStorageReducer } from './contacts/contactsStorageReducer';
+import { configureStore } from '@reduxjs/toolkit';
+import { catalogReducer } from './catalogReducer';
 // import { authReducer } from './authentificated/authReducer';
 
 // import {
@@ -22,18 +22,18 @@
 //   whitelist: ['token'],
 // };
 
-// export const store = configureStore({
-//   reducer: {
-//     contactsStorage: contactsStorageReducer,
-//     auth: persistReducer(authPersistConfig, authReducer),
-//     // ),
-//   },
-//   middleware: getDefaultMiddleware =>
-//     getDefaultMiddleware({
-//       serializableCheck: {
-//         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-//       },
-//     }),
-// });
+export const store = configureStore({
+  reducer: {
+    catalogStorage: catalogReducer,
+    //     auth: persistReducer(authPersistConfig, authReducer),
+    //     // ),
+  },
+  //   middleware: getDefaultMiddleware =>
+  //     getDefaultMiddleware({
+  //       serializableCheck: {
+  //         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+  //       },
+  //     }),
+});
 
 // export const persistor = persistStore(store);

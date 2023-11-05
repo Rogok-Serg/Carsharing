@@ -14,21 +14,24 @@ export const StyledHeader = styled.header`
   );
 `;
 
+export const StyledNav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+`;
+
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   margin-left: 16px;
   color: #fff;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     color: rgb(46, 47, 66);
   }
-`;
-export const StyledNav = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
 `;
 
 export const StyledMain = styled.main`

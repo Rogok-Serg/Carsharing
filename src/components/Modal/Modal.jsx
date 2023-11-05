@@ -1,4 +1,5 @@
 import {
+  StyledDescription,
   StyledFirstInformation,
   StyledSecondInformation,
   StyledSpan,
@@ -8,6 +9,8 @@ import {
   StyledBackdrop,
   StyledClose,
   StyledWrapperImg,
+  StyledFunctionalities,
+  StyledSpanWrapper,
 } from './Modal.styled';
 
 const Modal = ({ data, onClick }) => {
@@ -21,19 +24,29 @@ const Modal = ({ data, onClick }) => {
         <StyledClose onClick={onClick}>&times;</StyledClose>
         <StyledWrapperImg>
           <img src={data.img} alt="" width={461} />
-          <StyledFirstInformation>
-            <p style={{ margin: 0, fontSize: 13 }}>
-              {data.make} <StyledSpan>{data.model}</StyledSpan>, {data.year}
-            </p>
-          </StyledFirstInformation>
-          <StyledSecondInformation>
-            <p style={{ margin: 0 }}>
-              {data.address.split(' ').slice(3, 5)} | {data.rentalCompany} |{' '}
-              {data.type} | {data.make} | {data.mileage.toLocaleString('en-IN')}{' '}
-              | {data.accessories[2]}
-            </p>
-          </StyledSecondInformation>
         </StyledWrapperImg>
+        <StyledFirstInformation>
+          <p style={{ margin: 0, fontSize: 18 }}>
+            {data.make} <StyledSpan>{data.model}</StyledSpan>, {data.year}
+          </p>
+        </StyledFirstInformation>
+        <StyledSecondInformation>
+          <p style={{ margin: 0 }}>
+            {data.address.split(' ').slice(3, 5)} | Year: {data.year} | Type:{' '}
+            {data.type} <br /> Fuel Consumption: {data.fuelConsumption} | |
+            Engine Size: {data.engineSize}
+            {/* {data.mileage.toLocaleString('en-IN')} | {data.accessories[2]} */}
+          </p>
+          <StyledDescription>{data.description}</StyledDescription>
+          <StyledFunctionalities>
+            Accessories and functionalities:
+            <br />
+            <StyledSpanWrapper>
+              {data.functionalities[0]} | {data.functionalities[1]} |{' '}
+              {data.functionalities[2]}
+            </StyledSpanWrapper>
+          </StyledFunctionalities>
+        </StyledSecondInformation>
       </StyledModal>
     </StyledBackdrop>
   );

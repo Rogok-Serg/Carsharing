@@ -57,16 +57,13 @@ export const StyledClose = styled.button`
 `;
 
 export const StyledWrapperImg = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  // flex-wrap: wrap;
+
   justify-content: center;
 `;
 
 export const StyledFirstInformation = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -87,4 +84,31 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px;
+`;
+
+export const StyledDescription = styled.p`
+  color: #121417;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+`;
+
+export const StyledFunctionalities = styled.p`
+  color: #121417;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+`;
+
+export const StyledSpanWrapper = styled.span`
+  color: rgba(18, 20, 23, 0.5);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
 `;

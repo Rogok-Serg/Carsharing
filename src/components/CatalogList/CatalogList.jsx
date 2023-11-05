@@ -34,11 +34,7 @@ const CatalogList = ({ data }) => {
           return (
             <StyledItem key={id}>
               <div style={{ width: 274, height: 268, marginBottom: 14 }}>
-                <StyledImg
-                  src={el.img}
-                  alt=""
-                  style={{ backgroundSize: 'cover' }}
-                />
+                <StyledImg src={el.img} alt="" />
               </div>
               <StyledFirstInformation>
                 <p style={{ margin: 0, fontSize: 13 }}>

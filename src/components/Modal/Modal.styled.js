@@ -18,7 +18,7 @@ export const StyledModal = styled.div`
   height: 752px;
   top: 50%;
   left: 50%;
-  padding: 15px 40px 40px 40px;
+  padding: 45px 40px 40px 40px;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.2),
     0px 1px 1px rgba(0, 0, 0, 0.14);
@@ -59,8 +59,8 @@ export const StyledClose = styled.button`
 export const StyledWrapperImg = styled.div`
   width: 100%;
   display: flex;
-
   justify-content: center;
+  margin-bottom: 15px;
 `;
 
 export const StyledFirstInformation = styled.div`
@@ -84,6 +84,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 18px;
+margin-bottom: 24px;
 `;
 
 export const StyledDescription = styled.p`
@@ -111,4 +112,33 @@ export const StyledSpanWrapper = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+`;
+
+export const StyledRental = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  gap: 36px;  
+  color: #363535,
+  font-family: Montserrat,
+  font-size: 12px,
+  font-style: normal,
+  font-weight: 400px,
+  line-height: 18px,
+  letter-spacing: -0.24px,
+`;
+
+export const StyledButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 50px;
+  margin-top: 28px;
+  border-radius: 12px;
+  background: #3470ff;
+  border: #fff;
+  color: #fff;
+  transition: background 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background: #0b44cd;
+  }
 `;

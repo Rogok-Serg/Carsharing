@@ -11,6 +11,8 @@ import {
   StyledWrapperImg,
   StyledFunctionalities,
   StyledSpanWrapper,
+  StyledRental,
+  StyledButton,
 } from './Modal.styled';
 
 const Modal = ({ data, onClick }) => {
@@ -46,6 +48,17 @@ const Modal = ({ data, onClick }) => {
               {data.functionalities[2]}
             </StyledSpanWrapper>
           </StyledFunctionalities>
+          <StyledFunctionalities>
+            Rental Conditions:
+            <br />
+            <StyledSpanWrapper>{data.rentalConditions}</StyledSpanWrapper>
+          </StyledFunctionalities>
+          <StyledRental>
+            <p>{data.rentalCompany}</p>
+            <p>{data.rentalPrice}</p>
+            <p>{data.mileage.toLocaleString('en-IN')}</p>
+          </StyledRental>
+          <StyledButton>Rental car</StyledButton>
         </StyledSecondInformation>
       </StyledModal>
     </StyledBackdrop>

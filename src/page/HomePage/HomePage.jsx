@@ -5,7 +5,7 @@ const HomePage = () => {
     <Styledbackground>
       <StyledTitle>Carsharing</StyledTitle>
       <StyledText>
-        Автопрокат CATCAR в Одесі працює для вас кожен день без вихідних. Ми
+        Автопрокат Carsharing в Одесі працює для вас кожен день без вихідних. Ми
         здаємо в оренду тільки справні і надійні автомобілі, які систематично
         проходять технічний огляд.
       </StyledText>

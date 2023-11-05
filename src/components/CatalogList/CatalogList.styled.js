@@ -9,15 +9,14 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledItem = styled.li`
-  width: 264px;
-  height: 100%;
+  max-width: 264px;
   margin-bottom: 50px;
+  object-fit: cover;
 `;
 export const StyledImg = styled.img`
   width: 100%;
   height: 100%;
-  flex-shrink: 0;
-  // background-size: cover;
+  object-fit: cover;
   border-radius: 14px;
 `;
 
@@ -59,7 +58,8 @@ export const StyledButton = styled.button`
   flex-shrink: 0;
   border-radius: 12px;
   background: #3470ff;
-  border: none;
+  border: #fff;
+  transition: background 300ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background: #0b44cd;
   }

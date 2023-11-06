@@ -31,6 +31,7 @@ export const StyledLoadMore = styled.button`
   background: none;
   color: #3470ff;
   margin-bottom: 100px;
+  cursor: pointer;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -131,6 +132,7 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   padding: 12px 50px;
   margin-top: 28px;
   border-radius: 12px;

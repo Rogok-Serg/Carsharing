@@ -51,6 +51,7 @@ export const StyledButton = styled.button`
   display: flex;
   width: 274px;
   height: 44px;
+  cursor: pointer;
   padding: 12px 99px;
   margin-top: 28px;
   justify-content: center;

@@ -3,8 +3,6 @@ import {
   StyledFirstInformation,
   StyledSecondInformation,
   StyledSpan,
-} from 'components/Modal/Modal.styled';
-import {
   StyledModal,
   StyledBackdrop,
   StyledClose,
@@ -37,7 +35,6 @@ const Modal = ({ data, onClick }) => {
             {data.address.split(' ').slice(3, 5)} | Year: {data.year} | Type:{' '}
             {data.type} <br /> Fuel Consumption: {data.fuelConsumption} | |
             Engine Size: {data.engineSize}
-            {/* {data.mileage.toLocaleString('en-IN')} | {data.accessories[2]} */}
           </p>
           <StyledDescription>{data.description}</StyledDescription>
           <StyledFunctionalities>

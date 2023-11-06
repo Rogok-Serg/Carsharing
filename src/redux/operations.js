@@ -1,10 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 axios.defaults.baseURL = 'https://6544a1375a0b4b04436ca038.mockapi.io/api/';
-// const URL = 'https://6544a1375a0b4b04436ca038.mockapi.io/api';
-// axios.defaults.baseURL.searchParams.append('completed', false);
-// axios.defaults.baseURL.searchParams.append('page', 1);
-// axios.defaults.baseURL.searchParams.append('limit', 12);
 const params = {
   completed: false,
   page: 1,

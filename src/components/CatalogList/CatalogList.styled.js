@@ -11,7 +11,6 @@ export const StyledList = styled.ul`
 export const StyledItem = styled.li`
   max-width: 264px;
   margin-bottom: 50px;
-  object-fit: cover;
 `;
 export const StyledImg = styled.img`
   width: 100%;
@@ -23,7 +22,8 @@ export const StyledImg = styled.img`
 export const StyledFirstInformation = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  ]font-family: Manrope;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
@@ -39,7 +39,7 @@ height: 40px;
 display: flex:
 justify-content: center;
 color: rgba(18, 20, 23, 0.50);
-// font-family: Manrope;
+font-family: Manrope;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;

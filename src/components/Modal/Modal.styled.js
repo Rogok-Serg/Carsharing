@@ -65,6 +65,7 @@ export const StyledWrapperImg = styled.div`
 `;
 
 export const StyledFirstInformation = styled.div`
+  font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -80,7 +81,7 @@ height: 40px;
 display: flex:
 justify-content: center;
 color: rgba(18, 20, 23, 0.50);
-// font-family: Manrope;
+font-family: Manrope;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;

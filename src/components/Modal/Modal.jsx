@@ -20,7 +20,7 @@ const Modal = ({ data, onClick }) => {
 
   return (
     <StyledBackdrop>
-      <StyledModal>
+      <StyledModal className="modal">
         <StyledClose onClick={onClick}>&times;</StyledClose>
         <StyledWrapperImg>
           <img src={data.img} alt="" width={461} />

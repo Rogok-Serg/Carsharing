@@ -17,9 +17,7 @@ const catalogStorageSlice = createSlice({
       state.favorite = [...state.favorite, action.payload];
     },
     removeCar: (state, action) => {
-      state.favorite = state.favorite.filter(
-        car => car.id !== action.payload.id
-      );
+      state.favorite = state.favorite.filter(el => el.id !== action.payload.id);
     },
   },
   extraReducers: builder =>
@@ -51,4 +49,4 @@ const catalogStorageSlice = createSlice({
 });
 
 export const { addCar, removeCar } = catalogStorageSlice.actions;
-export const catalogReducer = catalogStorageSlice.reducer;
+export const catalogReducers = catalogStorageSlice.reducer;

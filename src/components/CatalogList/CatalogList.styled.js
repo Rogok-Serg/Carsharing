@@ -9,6 +9,7 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledItem = styled.li`
+  position: relative;
   max-width: 264px;
   margin-bottom: 50px;
 `;
@@ -64,4 +65,14 @@ export const StyledButton = styled.button`
   &:hover {
     background: #0b44cd;
   }
+`;
+
+export const StyledBtnLike = styled.button`
+  position: absolute;
+  border: none;
+  background: none;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+  cursor: pointer;
 `;

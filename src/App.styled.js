@@ -31,7 +31,6 @@ export const StyledNavLink = styled(NavLink)`
     &.active {
     color: #3470ff;
   }
-
   &:hover {
     color: #3470ff;
   }
